@@ -13,10 +13,10 @@
 
 #pragma region DEFINES
 #define DEBUG
-#define MAX_CURRENT 2000
+#define MAX_CURRENT 10000
 #define COLOR_ORDER GRB      // if colors are mismatched; change this
 #define LED_TYPE WS2812B
-#define NUM_LEDS 30
+#define NUM_LEDS 240
 #define DATA_PIN 5			// Seems to be D5 instead of GPIO5
 
 #define BLEND_REPLACE 0		// Foreground overrides whatever the background had before
@@ -28,9 +28,9 @@ const int BUFFER_SIZE = JSON_OBJECT_SIZE(10);
 
 #pragma endregion
 
-#define SENSORNAME "strip1"
-const char* light_state_topic = "ledstrip/strip1";
-const char* light_set_topic = "ledstrip/strip1/set";
+#define SENSORNAME "strip4"
+const char* light_state_topic = "ledstrip/strip4";
+const char* light_set_topic = "ledstrip/strip4/set";
 
 #pragma region GLOBAL DATA
 struct BGLED
